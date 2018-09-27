@@ -4,7 +4,7 @@
   "description": "Standard List of Coding Languages used by Code.gov",
   "main": "index.js",
   "scripts": {
-    "update-languages": "CODE_GOV_LANGUAGES=$(curl -s https://raw.githubusercontent.com/GSA/code-gov-data/master/languages.txt) node -e 'console.log(JSON.stringify(process.env.CODE_GOV_LANGUAGES.split(`\n`)))' > index.json"
+    "update": "CODE_GOV_LANGUAGES=$(curl -s https://raw.githubusercontent.com/GSA/code-gov-data/master/languages.txt) node -e 'console.log(JSON.stringify(process.env.CODE_GOV_LANGUAGES.split(`\n`)))' > index.json"
   },
   "repository": {
     "type": "git",
